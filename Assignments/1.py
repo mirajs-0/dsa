@@ -126,3 +126,9 @@ class User:
     
     def greet_user(self):
         print(f"Welcome back {self.username}!")
+
+# 11. Write a function named combine_lists that accepts two lists of integers as parameters. Consider that the two lists are already sorted (The numbers are already in order from smallest to biggest number). Your function should return a list that combines the two lists and at the same time is itself also sorted.
+
+def combine_lists(list1, list2):
+    new_list = [*list1, *list2]
+    return sorted(new_list)
