@@ -1,0 +1,28 @@
+Data Structures & Algorithms with Python NEW Module 3 Homework guidance:
+
+
+1. Insert at beginning -method
+
+Inserting a new node at the beginning of a list is probably the most straightforward insertion since you don’t have to traverse the whole list to do it. This method just creates a new node and then points the head of the list to it.
+
+
+2. Insert at End -method
+
+Inserting a new node at the end of the list forces you to traverse the whole linked list first and to add the new node when you reach the end. You can’t just append to the end as you would with a normal list because in a linked list you don’t know which node is last (we don't use Tail here).
+
+
+3. Insert between Two Nodes -methods
+
+Inserting between two nodes adds yet another layer of complexity to the linked list’s already complex insertions because there are two different approaches that you can use:
+
+- Inserting after an existing node
+- Inserting before an existing node
+
+It might seem weird to split these into two methods, but linked lists behave differently than normal lists, and you need a different implementation for each case.
+
+
+4. Remove a Node -method
+
+To remove a node from a linked list, you first need to traverse the list until you find the node you want to remove. Once you find the target, you want to link its previous and next nodes. This re-linking is what removes the target node from the list.
+
+That means you need to keep track of the previous node as you traverse the list. 
